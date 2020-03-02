@@ -13,24 +13,6 @@ class StaticMIPFailed(Exception):
     pass
 
 
-class StaticSol(object):
-    """class containing a solution to the static elicitation problem"""
-
-    def __init__(
-        self,
-        queries=None,
-        K=None,
-        objval=None,
-        total_time=None,
-        time_limit_reached=None,
-    ):
-        self.queries = queries
-        self.K = K
-        self.objval = objval
-        self.total_time = total_time
-        self.time_limit_reached = time_limit_reached
-
-
 def evaluate_query_list_exhaustive(queries, items, valid_responses):
     """given a list of queries, calculate the objective of the robust rec-learning problem by exhaustively checking
     each item and scenario"""
