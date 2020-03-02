@@ -2,11 +2,9 @@
 
 Code accompanying the paper Active Preference Elicitation via Adjustable Robust Optimization (Vayanos et al.), http://www.optimization-online.org/DB_HTML/2020/02/7647.html. 
 
-This code requires the following additional packages:
-- Python 3 
+This code requires the following:
+- Python 3 (with numpy and pandas)
 - Gurobi and python module gurobipy (free for academic use)
-- numpy
-- pandas
 
 ## General Outline
 - **preference_classes.py**: contains core classes for recommendations (Item, Agent, Query)
